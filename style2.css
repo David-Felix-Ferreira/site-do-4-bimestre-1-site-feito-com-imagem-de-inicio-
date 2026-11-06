@@ -6,7 +6,7 @@
 }
 
 .pagina h1 {
-    color: #5c2e16;
+    color: #1f5192;
     font-size: 40px;
     margin-bottom: 25px;
 }
@@ -14,4 +14,65 @@
 .pagina p {
     color: #444;
     font-size: 18px;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ee;
+}
+
+/* MENU SUPERIOR */
+header {
+    width: 100%;
+    background-color: #1f5192;
+    padding: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color:#031b3a;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1f5192;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .conteudo h1 {
+        font-size: 32px;
+    }
+
+    .conteudo h2 {
+        font-size: 45px;
+    }
 }
