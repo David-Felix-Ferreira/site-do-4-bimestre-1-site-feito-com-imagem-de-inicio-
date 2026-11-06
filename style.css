@@ -1,1 +1,115 @@
 
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ee;
+}
+
+/* MENU SUPERIOR */
+header {
+    width: 100%;
+    background-color: #1f5192;
+    padding: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color:#031b3a;
+}
+
+/* PRIMEIRA PÁGINA */
+.inicio {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)),
+        url("padaria.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo {
+    color: white;
+    padding: 30px;
+}
+
+.conteudo h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.conteudo h2 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* BOTÃO */
+.botao {
+    display: inline-block;
+    background-color: #1f5192;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #0e1b2c;
+    transform: scale(1.05);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1f5192;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .conteudo h1 {
+        font-size: 32px;
+    }
+
+    .conteudo h2 {
+        font-size: 45px;
+    }
+}
